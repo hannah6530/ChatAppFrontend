@@ -6,7 +6,7 @@ const App = () => {
 
     useEffect(() => {
 
-        fetch('http://localhost:8080/users', {
+        fetch('http://localhost:3002/users', {
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
