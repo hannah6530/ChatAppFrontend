@@ -3,7 +3,9 @@ import '../App.css';
 
 const LoginPage = (props) => {
 
-    const loginState = useState({username: '', password: ''});
+    const [enteredUsername, setEnteredUsername] = useState('');
+    const [enteredPassword, setEnteredPassword] = useState('');
+
 
     return(
         <React.Fragment>
@@ -12,23 +14,15 @@ const LoginPage = (props) => {
                 <h2>Login</h2>
                 <form>
                     <div className="inputBox">
-                        <input type="text" name="username" value={loginState[0].username}  onChange={event => {
-                            const newUsername = event.target.value;
-                            loginState[1](prevLoginState => ({
-                                username: newUsername,
-                                password: prevLoginState.password
-                            }));
+                        <input type="text" name="username" value={enteredUsername}  onChange={event => {
+                           setEnteredUsername(event.target.value);
                         }}
                         />
                             <label>Username</label>
                     </div>
                     <div className="inputBox">
-                        <input type="text"  name="password" value={loginState[0].password} onChange={event => {
-                            const newPassword = event.target.value;
-                            loginState[1](prevLoginState => ({
-                                password: newPassword,
-                                username: prevLoginState.username
-                            }));
+                        <input type="text"  name="password" value={enteredPassword} onChange={event => {
+                            setEnteredPassword(event.target.value);
                         }}
                         />
                             <label>Password</label>
