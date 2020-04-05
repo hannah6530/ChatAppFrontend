@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import '../App.css';
+import './style.css';
 
-const LoginPage = (props) => {
+const Login = (props) => {
 
     const [enteredUsername, setEnteredUsername] = useState('');
     const [enteredPassword, setEnteredPassword] = useState('');
@@ -33,4 +33,4 @@ const LoginPage = (props) => {
         </React.Fragment>
     );
 };
-export default LoginPage;
+export default Login;

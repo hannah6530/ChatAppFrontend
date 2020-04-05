@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import LoginPage from "./Components/LoginPage";
+import Login from "./Components/Login";
 import MainPage from "./Components/MainPage";
 
 const App = () => {
@@ -16,14 +16,19 @@ const App = () => {
             .then(res => res.json())
             .then(userData => {
                 setInitialState(userData);
+
             })
-    });
+    },
+        []
+    );
+    // console.log(initialState[0]);
 
   return (
       <React.Fragment>
-          <LoginPage
+          <Login
           />
           <MainPage
+              userData={initialState}
           />
       </React.Fragment>
   );
