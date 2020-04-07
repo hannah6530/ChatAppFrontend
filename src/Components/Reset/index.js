@@ -1,15 +1,12 @@
 import React from 'react';
+import './style.css';
 
 
-const MainPage = (props) => {
-    console.log(props.userData);
-
-
+const Reset = () => {
     return(
         <React.Fragment>
-
+            hi this is reset
         </React.Fragment>
-
     );
 };
-export default MainPage;
+export default Reset;
