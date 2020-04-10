@@ -9,6 +9,7 @@ const Chat = () => {
                 </div>
 
                 <div id="search">
+                    <input type="text" placeholder="search" />
 
                 </div>
                 <div id="conversation-list">
@@ -18,6 +19,9 @@ const Chat = () => {
 
                 </div>
                 <div id="chat-form">
+
+                </div>
+                <div id="chat-message-list">
 
                 </div>
 
