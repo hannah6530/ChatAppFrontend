@@ -1,11 +1,27 @@
 import React, { useState } from 'react';
 import './style.css';
 
-
 const Chat = () => {
     return(
         <React.Fragment>
-            Hello this is chat
+            <div id="chat-container">
+                <div id="chat-title">
+                </div>
+
+                <div id="search">
+
+                </div>
+                <div id="conversation-list">
+
+                </div>
+                <div id="new-message-container">
+
+                </div>
+                <div id="chat-form">
+
+                </div>
+
+            </div>
         </React.Fragment>
     )
 

@@ -5,9 +5,10 @@ import Chat from "./Components/Chat";
 import Main from "./Components/Main";
 import Reset from "./Components/Reset";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import SignUp from "./Components/SignUp";
 
 const App = () => {
-    const [initialState, setInitialState] = useState({ current_user_id: '', first_name: '', last_name: '', username: '',  password: '',  email_address: ''});
+    const [initialState, setInitialState] = useState({ current_user_id: '', first_name: '', last_name: '', username: '',  email_address: ''});
 
     useEffect(() => {
 
@@ -37,6 +38,7 @@ const App = () => {
                   <Route path="/main" exact component={Main}/>
                   <Route path="/reset" exact component={Reset}/>
                   <Route path="/chat" exact component={Chat}/>
+                  <Route path="/sign_up" exact component={SignUp}/>
               </Switch>
           </React.Fragment>
       </Router>

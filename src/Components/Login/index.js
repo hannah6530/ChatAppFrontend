@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import './style.css';
+import { Link } from 'react-router-dom';
 
 const Login = (props) => {
 
     const [enteredUsername, setEnteredUsername] = useState('');
     const [enteredPassword, setEnteredPassword] = useState('');
-
 
     return(
         <React.Fragment>
@@ -28,6 +28,7 @@ const Login = (props) => {
                             <label>Password</label>
                     </div>
                     <input type="submit" name="submit" value="submit" />
+                    <p>No account? <a><Link to="/sign_up">Sign Up Here</Link></a></p>
                 </form>
             </div>
         </React.Fragment>

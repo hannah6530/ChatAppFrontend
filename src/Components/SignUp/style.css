@@ -68,11 +68,3 @@ h1 {
 .box input[type="submit"]:hover{
     font-weight: bold;
 }
-a,p{
-    color: white;
-}
-a:hover{
-    color: #5100c9;
-    font-weight: bold;
-    cursor: alias;
-}
